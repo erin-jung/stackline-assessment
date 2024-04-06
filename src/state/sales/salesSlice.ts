@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import mockSalesData from "../../assets/stackline_frontend_assessment_data_2021.json"
-import { SalesInitialState, ProductDetails } from "./sales_interface";
+import { ProductInitialState, ProductDetails } from "./sales_interface";
 
 export const fetchProductData = createAsyncThunk("sales/fetchProductData", async () => {
     //TODO: fetch data from actual URL here
@@ -19,14 +19,14 @@ const initialProductDetails: ProductDetails = {
     sales: []
 };
 
-const initialState: SalesInitialState = {
+const initialState: ProductInitialState = {
     productDetails: initialProductDetails,
     loading: "idle",
     error: null,
 };
 
 const salesSlice = createSlice({
-    name: "sales",
+    name: "productDetail",
     initialState,
     reducers: {},
     extraReducers: (builder) => {

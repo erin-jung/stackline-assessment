@@ -18,7 +18,7 @@ export interface ProductDetails {
     sales: SalesData[];
   }
 
-export interface SalesInitialState {
+export interface ProductInitialState {
     productDetails: ProductDetails;
     loading: "idle" | "pending" | "succeeded" | "failed";
     error: string | null;
