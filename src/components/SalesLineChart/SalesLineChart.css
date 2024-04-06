@@ -1,0 +1,18 @@
+.sales-chart-container{
+    background-color: white;
+    box-shadow: 3px 3px 3px 3px rgba(236, 236, 236, 0.5);
+    padding: 10px;
+    color: rgb(97, 95, 95);
+}
+
+.month-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1% 4% 1% 4%;
+    color: #bec4c5;
+}
+.chart-title{
+    padding-left: 5%;
+    font-weight: 500;
+}
